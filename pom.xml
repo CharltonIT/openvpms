@@ -179,7 +179,7 @@
         <repository>
             <id>openvpms-releases</id>
             <name>OpenVPMS Release Repository</name>
-            <url>scp://gateway.openvpms.org:2233/home/e-smith/files/ibays/repo/html/releases</url>
+            <url>scp://repo.openvpms.org/home:2233/admin/public_html/repo.openvpms.org/public/releases</url>
         </repository>
         <site>
             <id>openvpms-site</id>
@@ -189,9 +189,18 @@
         <snapshotRepository>
             <id>openvpms-snapshots</id>
             <name>OpenVPMS Snapshot Repository</name>
-            <url>scp://gateway.openvpms.org:2233/home/e-smith/files/ibays/repo/html/snapshots</url>
+            <url>scp://repo.openvpms.org:2233/home/admin/public_html/repo.openvpms.org/public/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
+    <modules>
+    	<module>../openvpms-framework</module>
+    	<module>../maven-plugins</module>
+    	<module>../openvpms-archetypes</module>
+    	<module>../openvpms-reports</module>
+    	<module>../openvpms-web</module>
+    	<module>../openvpms-etl</module>
+    	<module>../openvpms-release</module>
+    </modules>
 
     <repositories>
         <repository>
@@ -253,6 +262,13 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
+    <dependencies>
+    	<dependency>
+    		<groupId>com.jcraft</groupId>
+    		<artifactId>jsch</artifactId>
+    		<version>0.1.42</version>
+    	</dependency>
+    </dependencies>
 
     <reporting>
         <plugins>
@@ -288,25 +304,6 @@
             </plugin>
         </plugins>
     </reporting>
-
-    <profiles>
-        <!-- ================= Build Profiles ================= -->
-        <profile>
-            <id>default</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <modules>
-                <module>../framework</module>
-                <module>../maven</module>
-                <module>../archetypes</module>
-                <module>../reports</module>
-                <module>../vpms</module>
-                <module>../etl</module>
-                <module>../release</module>
-            </modules>
-        </profile>
-    </profiles>
 
     <properties>
         <!-- encoding -->

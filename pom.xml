@@ -179,7 +179,7 @@
         <repository>
             <id>openvpms-releases</id>
             <name>OpenVPMS Release Repository</name>
-            <url>scp://repo.openvpms.org/home:2233/admin/public_html/repository.openvpms.org/public/releases</url>
+            <url>scp://repo.openvpms.org:2233/home/admin/public_html/repository.openvpms.org/public/releases</url>
         </repository>
         <site>
             <id>openvpms-site</id>

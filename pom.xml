@@ -179,17 +179,17 @@
         <repository>
             <id>openvpms-releases</id>
             <name>OpenVPMS Release Repository</name>
-            <url>scp://repo.openvpms.org:2233/home/admin/public_html/repository.openvpms.org/public/releases</url>
+            <url>scp://repository.openvpms.org:2233/home/admin/public_html/repository.openvpms.org/public/releases</url>
         </repository>
         <site>
             <id>openvpms-site</id>
             <name>OpenVPMS Maven Site</name>
-            <url>scp://gateway.openvpms.org:2233/home/e-smith/files/ibays/dev/html</url>
+            <url>scp://dev.openvpms.org:2233/home/admin/public_html/dev.openvpms.org/public/</url>
         </site>
         <snapshotRepository>
             <id>openvpms-snapshots</id>
             <name>OpenVPMS Snapshot Repository</name>
-            <url>scp://repo.openvpms.org:2233/home/admin/public_html/repository.openvpms.org/public/snapshots</url>
+            <url>scp://repository.openvpms.org:2233/home/admin/public_html/repository.openvpms.org/public/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
     <modules>
@@ -206,7 +206,7 @@
         <repository>
             <id>openvpms-releases</id>
             <name>OpenVPMS Releases</name>
-            <url>http://repo.openvpms.org/releases</url>
+            <url>http://repository.openvpms.org/releases</url>
             <releases>
                 <enabled>true</enabled>
                 <checksumPolicy>fail</checksumPolicy>
@@ -220,7 +220,7 @@
         <repository>
             <id>openvpms-snapshots</id>
             <name>OpenVPMS Snapshots</name>
-            <url>http://repo.openvpms.org/snapshots</url>
+            <url>http://repository.openvpms.org/snapshots</url>
             <releases>
                 <enabled>false</enabled>
                 <checksumPolicy>fail</checksumPolicy>
@@ -234,7 +234,7 @@
         <repository>
             <id>openvpms-dependencies</id>
             <name>OpenVPMS 3rd party dependendencies</name>
-            <url>http://repo.openvpms.org/dependencies</url>
+            <url>http://repository.openvpms.org/dependencies</url>
             <snapshots>
                 <enabled>false</enabled>
                 <checksumPolicy>fail</checksumPolicy>
@@ -256,7 +256,7 @@
     <pluginRepositories>
         <pluginRepository>
             <id>openvpms-snapshots</id>
-            <url>http://repo.openvpms.org/snapshots</url>
+            <url>http://repository.openvpms.org/snapshots</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
@@ -267,6 +267,10 @@
         <plugins>
             <plugin>
                 <artifactId>maven-changes-plugin</artifactId>
+                <version>2.3</version>
+                <configuration>
+                    <onlyCurrentVersion>true</onlyCurrentVersion> 	
+                </configuration>
             </plugin>
             <!--plugin>
                 <artifactId>maven-checkstyle-plugin</artifactId>
@@ -277,7 +281,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>cobertura-maven-plugin</artifactId>
-                <version>2.0</version>
+                <version>2.3</version>
             </plugin>
             <plugin>
                 <artifactId>maven-javadoc-plugin</artifactId>

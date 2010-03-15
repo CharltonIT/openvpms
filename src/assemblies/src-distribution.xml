@@ -34,7 +34,7 @@
                 <include>org.openvpms:openvpms-report-maven-plugin</include>
             </includes>
             <sources>
-                <outputDirectoryMapping>maven/${module.basedir.name}</outputDirectoryMapping>
+                <outputDirectoryMapping>maven-plugins/${module.basedir.name}</outputDirectoryMapping>
                 <fileSets>
                     <fileSet>
                         <directory>/</directory>
@@ -53,7 +53,7 @@
                 <include>org.openvpms:openvpms-etl-plugin</include>
             </includes>
             <sources>
-                <outputDirectoryMapping>etl/${module.basedir.name}</outputDirectoryMapping>
+                <outputDirectoryMapping>openvpms-etl/${module.basedir.name}</outputDirectoryMapping>
                 <fileSets>
                     <fileSet>
                         <directory>/</directory>

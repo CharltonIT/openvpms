@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/DECORATION/1.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache.org/xsd/decoration-1.0.0.xsd">
+
+    <bannerLeft>
+        <name>OpenVPMS Dev</name>
+        <src>http://dev.openvpms.org/images/logo.gif</src>
+        <href>http://dev.openvpms.org/</href>
+    </bannerLeft>
+
+    <!--skin>
+        <groupId>org.apache.maven.skins</groupId>
+        <artifactId>maven-stylus-skin</artifactId>
+        <version>1.1</version>
+    </skin-->
+
+    <publishDate format="yyyy-MM-dd" position="right"/>
+    <version position="right"/>
+
+    <body>
+        <head>
+            <link href="http://dev.openvpms.org/images/favicon.ico" rel="SHORTCUT ICON"/>
+        </head>
+        <!-- Breadcrumbs that every project will inherit -->
+        <breadcrumbs>
+            <item name="OpenVPMS" href="http://www.openvpms.org/"/>
+            <item name="Development" href="http://dev.openvpms.org/"/>
+        </breadcrumbs>
+
+        <menu ref="modules" inherit="bottom"/>
+        <!-- need to use absolute URLs in the menu items as the site plugin doesn't play nicely
+             with aggregate projects -->
+        <!--menu name="OpenVPMS Projects" inherit="bottom">
+            <item name="VPMS Web Application" href="http://dev.openvpms.org/openvpms-web/index.html"/>
+            <item name="Framework" href="http://dev.openvpms.org/openvpms-framework/index.html"/>
+            <item name="Archetypes" href="http://dev.openvpms.org/openvpms-archetypes/index.html"/>
+            <item name="Reports" href="http://dev.openvpms.org/openvpms-reports/index.html"/>
+            <item name="ETL" href="http://dev.openvpms.org/openvpms-etl/index.html"/>
+            <item name="Release" href="http://dev.openvpms.org/openvpms-release/index.html"/>
+            <item name="Maven Plugins" href="http://dev.openvpms.org/maven-plugins/index.html"/>
+        </menu-->
+
+        <menu ref="reports"/>
+
+    </body>
+</project>

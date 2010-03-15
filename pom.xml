@@ -23,29 +23,14 @@
     </prerequisites>
 
     <scm>
-        <connection>
-            scm:svn:svn://svn.openvpms.org/openvpms/openvpms/trunk
-        </connection>
-        <developerConnection>
-            scm:svn:svn://svn.openvpms.org/openvpms/openvpms/trunk
-        </developerConnection>
-        <url>http://svn.openvpms.org</url>
+        <connection>scm:svn:svn://svn.openvpms.org/openvpms/openvpms/trunk</connection>
+        <developerConnection>scm:svn:svn://svn.openvpms.org/openvpms/openvpms/trunk</developerConnection>
     </scm>
 
     <issueManagement>
         <system>jira</system>
         <url>http://jira.openvpms.org/jira/secure/Dashboard.jspa</url>
     </issueManagement>
-
-    <ciManagement>
-        <notifiers>
-            <notifier>
-                <configuration>
-                    <address>buildman@openvpms.org</address>
-                </configuration>
-            </notifier>
-        </notifiers>
-    </ciManagement>
 
     <licenses>
         <license>
@@ -59,13 +44,13 @@
             <name>OpenVPMS Developers Mailing List</name>
             <subscribe>http://lists.openvpms.org/mailman/listinfo/developers</subscribe>
             <unsubscribe>http://lists.openvpms.org/mailman/listinfo/developers</unsubscribe>
-            <archive>http://lists.openvpms.org/mailman/public/developers/</archive>
+            <archive>http://lists.openvpms.org/pipermail/developers/</archive>
         </mailingList>
         <mailingList>
             <name>OpenVPMS Users Mailing List</name>
             <subscribe>http://lists.openvpms.org/mailman/listinfo/users</subscribe>
             <unsubscribe>http://lists.openvpms.org/mailman/listinfo/users</unsubscribe>
-            <archive>http://lists.openvpms.org/mailman/public/users/</archive>
+            <archive>http://lists.openvpms.org/pipermail/users/</archive>
         </mailingList>
     </mailingLists>
 
@@ -74,6 +59,9 @@
             <id>tanderson</id>
             <name>Tim Anderson</name>
             <email>tma@netspace.net.au</email>
+            <roles>
+                <role>Developer</role>
+            </roles>
             <timezone>+10</timezone>
         </developer>
         <developer>
@@ -84,6 +72,13 @@
                 <role>Project Manager</role>
             </roles>
             <timezone>+10</timezone>
+        </developer>
+        <developer>
+            <id>jalateras</id>
+            <name>Jim Alateras</name>
+            <roles>
+                <role>Emeritus</role>
+            </roles>
         </developer>
     </developers>
 
@@ -171,6 +166,10 @@
                         </execution>
                     </executions>
                 </plugin>
+                <plugin>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <version>2.0.1</version> <!-- latest is 2.1 but is broken -->
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>
@@ -189,17 +188,18 @@
         <snapshotRepository>
             <id>openvpms-snapshots</id>
             <name>OpenVPMS Snapshot Repository</name>
-            <url>scp://repository.openvpms.org:2233/home/admin/public_html/repository.openvpms.org/public/snapshots</url>
+            <url>scp://repository.openvpms.org:2233/home/admin/public_html/repository.openvpms.org/public/snapshots
+            </url>
         </snapshotRepository>
     </distributionManagement>
     <modules>
-    	<module>../openvpms-framework</module>
-    	<module>../maven-plugins</module>
-    	<module>../openvpms-archetypes</module>
-    	<module>../openvpms-reports</module>
-    	<module>../openvpms-web</module>
-    	<module>../openvpms-etl</module>
-    	<module>../openvpms-release</module>
+        <module>../openvpms-framework</module>
+        <module>../maven-plugins</module>
+        <module>../openvpms-archetypes</module>
+        <module>../openvpms-reports</module>
+        <module>../openvpms-web</module>
+        <module>../openvpms-etl</module>
+        <module>../openvpms-release</module>
     </modules>
 
     <repositories>
@@ -266,18 +266,17 @@
     <reporting>
         <plugins>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>2.1.2</version>
+            </plugin>
+            <!--plugin>
                 <artifactId>maven-changes-plugin</artifactId>
                 <version>2.3</version>
                 <configuration>
                     <onlyCurrentVersion>true</onlyCurrentVersion> 	
                 </configuration>
             </plugin>
-            <!--plugin>
-                <artifactId>maven-checkstyle-plugin</artifactId>
-                <configuration>
-                    <configLocation>https://appfuse.dev.java.net/checkstyle.xml</configLocation>
-                </configuration>
-            </plugin-->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>cobertura-maven-plugin</artifactId>
@@ -298,7 +297,7 @@
             </plugin>
             <plugin>
                 <artifactId>maven-surefire-report-plugin</artifactId>
-            </plugin>
+            </plugin-->
         </plugins>
     </reporting>
 

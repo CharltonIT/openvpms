@@ -279,6 +279,11 @@
                 <version>${commons.lang.version}</version>
             </dependency>
             <dependency>
+                <groupId>commons-dbcp</groupId>
+                <artifactId>commons-dbcp</artifactId>
+                <version>${commons.dbcp.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>commons-logging</groupId>
                 <artifactId>commons-logging</artifactId>
                 <version>${commons.logging.version}</version>
@@ -309,9 +314,26 @@
                 <version>${spring.security.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.quartz-scheduler</groupId>
+                <artifactId>quartz</artifactId>
+                <version>1.8.4</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>servlet-api</artifactId>
+                <version>${javax.servlet.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <version>${junit.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-test</artifactId>
+                <version>${spring.version}</version>
                 <scope>test</scope>
             </dependency>
         </dependencies>
@@ -490,7 +512,7 @@
         <oro.version>2.0.8</oro.version>
         <stax.api.version>1.0</stax.api.version>
         <stax.version>1.1.2-dev</stax.version>
-        <slf4j.version>1.5.8</slf4j.version>
+        <slf4j.version>1.6.0</slf4j.version>
         <spring.version>3.0.5.RELEASE</spring.version>
         <spring.security.version>3.0.3.RELEASE</spring.security.version>
         <springmodules.version>0.2</springmodules.version>

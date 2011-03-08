@@ -10,7 +10,7 @@
     <artifactId>openvpms</artifactId>
     <packaging>pom</packaging>
     <name>OpenVPMS</name>
-    <version>1.5-SNAPSHOT</version>
+    <version>1.5-beta-1</version>
     <inceptionYear>2005</inceptionYear>
     <url>http://www.openvpms.org</url>
 

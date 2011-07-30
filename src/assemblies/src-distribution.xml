@@ -13,12 +13,8 @@
                 <outputDirectoryMapping>${module.basedir.name}</outputDirectoryMapping>
                 <fileSets>
                     <fileSet>
-                        <directory>/</directory>
                         <includes>
                             <include>pom.xml</include>
-                            <include>project.xml</include>
-                            <include>project.properties</include>
-                            <include>maven.xml</include>
                             <include>src/**</include>
                             <include>test/**</include>
                         </includes>
@@ -37,7 +33,6 @@
                 <outputDirectoryMapping>maven-plugins/${module.basedir.name}</outputDirectoryMapping>
                 <fileSets>
                     <fileSet>
-                        <directory>/</directory>
                         <includes>
                             <include>pom.xml</include>
                             <include>src/**</include>
@@ -56,12 +51,8 @@
                 <outputDirectoryMapping>openvpms-etl/${module.basedir.name}</outputDirectoryMapping>
                 <fileSets>
                     <fileSet>
-                        <directory>/</directory>
                         <includes>
                             <include>pom.xml</include>
-                            <include>project.xml</include>
-                            <include>project.properties</include>
-                            <include>maven.xml</include>
                             <include>src/**</include>
                         </includes>
                     </fileSet>
@@ -71,7 +62,6 @@
     </moduleSets>
     <fileSets>
         <fileSet>
-            <directory>/</directory>
             <includes>
                 <include>pom.xml</include>
                 <include>src/**</include>

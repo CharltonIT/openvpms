@@ -503,7 +503,7 @@
         <dom4j.version>1.6.1</dom4j.version>
         <drools.version>2.1</drools.version>
         <drools.jsr94.version>1.1</drools.jsr94.version>
-        <ehcache.version>1.6.2</ehcache.version>
+        <ehcache.version>1.7.2</ehcache.version>
         <hibernate.version>3.3.2.GA</hibernate.version>
         <janino.version>2.3.8</janino.version>
         <jasperreports.version>3.7.6</jasperreports.version>

@@ -351,6 +351,7 @@
         <module>../maven-plugins</module>
         <module>../openvpms-archetypes</module>
         <module>../openvpms-reports</module>
+        <module>../openvpms-sms</module>
         <module>../openvpms-esci-adapter</module>
         <module>../openvpms-web</module>
         <module>../openvpms-etl</module>

@@ -7,7 +7,7 @@
     <artifactId>openvpms</artifactId>
     <packaging>pom</packaging>
     <name>OpenVPMS</name>
-    <version>1.5</version>
+    <version>1.5.1</version>
     <inceptionYear>2005</inceptionYear>
     <url>http://www.openvpms.org</url>
 
@@ -196,17 +196,17 @@
         <repository>
             <id>openvpms-releases</id>
             <name>OpenVPMS Release Repository</name>
-            <url>scp://repository.openvpms.org:2233/home/admin/public_html/repository.openvpms.org/public/releases</url>
+            <url>scp://repository.openvpms.org:22333/home/admin/public_html/repository.openvpms.org/public/releases</url>
         </repository>
         <site>
             <id>openvpms-site</id>
             <name>OpenVPMS Maven Site</name>
-            <url>scp://dev.openvpms.org:2233/home/admin/public_html/dev.openvpms.org/public/</url>
+            <url>scp://dev.openvpms.org:22333/home/admin/public_html/dev.openvpms.org/public/</url>
         </site>
         <snapshotRepository>
             <id>openvpms-snapshots</id>
             <name>OpenVPMS Snapshot Repository</name>
-            <url>scp://repository.openvpms.org:2233/home/admin/public_html/repository.openvpms.org/public/snapshots
+            <url>scp://repository.openvpms.org:22333/home/admin/public_html/repository.openvpms.org/public/snapshots
             </url>
         </snapshotRepository>
     </distributionManagement>

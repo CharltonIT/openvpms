@@ -7,7 +7,7 @@
     <artifactId>openvpms</artifactId>
     <packaging>pom</packaging>
     <name>OpenVPMS</name>
-    <version>1.5.1</version>
+    <version>1.6-SNAPSHOT</version>
     <inceptionYear>2005</inceptionYear>
     <url>http://www.openvpms.org</url>
 
@@ -306,7 +306,7 @@
                 <version>${spring.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.springframework</groupId>
+                <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-core</artifactId>
                 <version>${spring.security.version}</version>
             </dependency>

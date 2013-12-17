@@ -8,7 +8,7 @@
     <artifactId>openvpms</artifactId>
     <packaging>pom</packaging>
     <name>OpenVPMS</name>
-    <version>1.7-beta-2-SNAPSHOT</version>
+    <version>1.7-beta-2</version>
     <inceptionYear>2005</inceptionYear>
     <url>http://www.openvpms.org</url>
 

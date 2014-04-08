@@ -5,16 +5,16 @@ The main project for openvpms
 
 This project is the master project for OPENVPMS - the projects should be placed in a directory structure as follows
 
-openvpms	              Parent project. Contains common properties
-openvpms-framework		  OpenVPMS framework
-maven-plugins	        	Maven plugins to load archetypes, test data
-openvpms-archetypes	  	Business rules
-openvpms-reports	    	Reporting framework
-openvpms-sms	        	SMS support
-openvpms-esci-adapter		ESCI adapter
-openvpms-web	        	Web application
-openvpms-etl	        	ETL support
-openvpms-release	      Generates release distributions
+- openvpms	              Parent project. Contains common properties
+- openvpms-framework		  OpenVPMS framework
+- maven-plugins	        	Maven plugins to load archetypes, test data
+- openvpms-archetypes	  	Business rules
+- openvpms-reports	    	Reporting framework
+- openvpms-sms	        	SMS support
+- openvpms-esci-adapter		ESCI adapter
+- openvpms-web	        	Web application
+- openvpms-etl	        	ETL support
+- openvpms-release	      Generates release distributions
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 OpenVPMS is a not for profit organisation built around the development and supply of open source 

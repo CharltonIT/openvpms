@@ -62,6 +62,15 @@
             </roles>
             <timezone>+10</timezone>
         </developer>
+		<developer>
+            <id>benjamincharlton</id>
+            <name>Ben Charlton</name>
+            <email>benjicharlton@gmail.com</email>
+            <roles>
+                <role>Contributor</role>
+            </roles>
+            <timezone>+10</timezone>
+        </developer>
         <developer>
             <id>tde</id>
             <name>Tony De Keizer</name>

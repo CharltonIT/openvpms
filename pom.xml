@@ -598,7 +598,7 @@
         <jdbc.artifactId>mysql-connector-java</jdbc.artifactId>
         <jdbc.version>5.1.5</jdbc.version>
         <jdbc.driverClassName>com.mysql.jdbc.Driver</jdbc.driverClassName>
-        <jdbc.url>jdbc:mysql://localhost:3306/openvpms</jdbc.url>
+        <jdbc.url>jdbc:mysql://localhost:3308/openvpms</jdbc.url>
         <jdbc.username>openvpms</jdbc.username>
         <jdbc.password>openvpms</jdbc.password>
     </properties>

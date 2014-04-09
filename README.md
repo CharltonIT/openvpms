@@ -1,7 +1,12 @@
 OpenVPMS-Main
 =============
 
-The main project for openvpms
+The main project for openvpms.  This represents a FORK from the original OPENVPMS project hosted at 
+
+svn://svn.openvpms.org/openvpms
+
+However the code base here is rebased onto the master code on the svn repo as regularly as is required to keep up to date.  It might be a week or two behind in commits.
+
 
 This project is the master project for OPENVPMS - the projects should be placed in a directory structure as follows
 

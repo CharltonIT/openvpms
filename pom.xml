@@ -8,7 +8,7 @@
     <artifactId>openvpms</artifactId>
     <packaging>pom</packaging>
     <name>OpenVPMS</name>
-    <version>1.7.1-SNAPSHOT</version>
+    <version>1.7.1-CDIT-beta</version>
     <inceptionYear>2005</inceptionYear>
     <url>http://www.openvpms.org</url>
 
@@ -21,8 +21,8 @@
     </prerequisites>
 
     <scm>
-        <connection>scm:svn:svn://svn.openvpms.org/openvpms/openvpms/trunk</connection>
-        <developerConnection>scm:svn:svn://svn.openvpms.org/openvpms/openvpms/trunk</developerConnection>
+        <connection>scm:git:https://www.github.com/charltonIT/openvpms-main</connection>
+        <developerConnection>scm:git:https://www.github.com/charltonIT/openvpms-main</developerConnection>
     </scm>
 
     <issueManagement>
@@ -59,6 +59,15 @@
             <email>tma@netspace.net.au</email>
             <roles>
                 <role>Developer</role>
+            </roles>
+            <timezone>+10</timezone>
+        </developer>
+        <developer>
+            <id>benjamincharlton</id>
+            <name>Ben Charlton</name>
+            <email>benjamincharlton@ascotvetsurgery.com.au</email>
+            <roles>
+                <role>Contributor</role>
             </roles>
             <timezone>+10</timezone>
         </developer>

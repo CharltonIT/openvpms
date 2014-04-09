@@ -1,0 +1,348 @@
+OpenVPMS Software Licence
+
+Part 1:  Background
+
+1.	About this document
+
+This is a software licence for OpenVPMS software (called 'the software' from this 
+point on.)
+
+2.	The software is copyright
+
+	The software consists of original source and object code that was created and is 
+	owned by OpenVPMS Ltd  ACN 113 542 162 (called 'licensor' from this point on).
+
+	The software may utilise community code licensed to the licensor under this licence.
+
+	The software also utilises software licensed under open source licences e.g. the 
+	'Apache' open source software licence, and links to software libraries licensed e.g. 
+	under the 'LGPL' open source software licence – (together called the 'open source 
+	components' from this point on).  Full details of the licensing of the open source 
+	components are contained in NOTICE.txt that accompanies the software.
+
+	Worldwide copyright and all other intellectual property rights whatsoever in the 
+	software are the sole and exclusive property of the licensor.
+
+Part 2:  What subscribers may do – overview 
+
+3.	Part 7 explains who is a 'developer subscriber'.
+
+	(Subject to this licence) a developer subscriber may:
+
+	-	modify, adapt or add to the software, or create derivative works from or based on 
+		the software and / or linking to its libraries (and all source or object code created 
+		in doing so is called 'community code' from this point on); and
+	-	publish and distribute their community code.
+
+	Part 8 and Part 9 explain this in detail.
+
+4.	Part 3 explains who is a 'user subscriber'.
+
+	(Subject to this licence) a 'user subscriber' may:
+	-	install and use the software and / or community code to support the operations of 
+		a veterinary practice, or
+	-	subject to Part 5 – install and use the software and / or community code to 
+		support any other kind of operations. 
+5.	You may be both a developer subscriber and a user subscriber.
+	If you are:
+	-	you must comply with this licence as it applies to developer subscribers with 
+		respect to any community code you create, publish or distribute; and
+	-	you must comply with this licence as it applies to user subscribers with respect to 
+		any software and / or community code you use to support the operations of a 
+		veterinary practice or otherwise.
+
+Part 3:  User subscribers, subscription fees and subscription periods
+
+6.	You are a 'user subscriber' for a certain 'subscription period' if you have paid to the 
+	licensor the then current 'subscription fee' applicable to you for that subscription 
+	period.
+
+7.	When that subscription period ends, you cease to be a user subscriber unless you 
+	have paid the then current subscription fee for the next subscription period.
+
+8.	The subscription fee depends on the maximum number of 'Full-time Vet Equivalents' 
+	(called 'FVEs' from this point on) you are licensed to support using the software and / 
+	or community code during the subscription period (called the 'FVE limit' from this 
+	point on).
+
+9.	The licensor may publish details of subscription fees and subscription periods at 
+	http://www.openvpms.org/subscription, or otherwise as it sees fit.
+
+Part 4:  Full-time Vet Equivalent ('FVE') – veterinary clinics
+
+10.	Vet
+	A 'vet' is a professionally qualified veterinary surgeon (or equivalent).
+
+11.	Clinic
+	A 'clinic' is premises at or from which one or more vets conduct veterinary practice.
+
+12.	Vet on duty
+	A vet is 'on duty at a clinic' if s/he:
+	-	is performing veterinary or ancillary services at the clinic, or
+	-	is at or in the vicinity of the clinic and available to perform veterinary or ancillary 
+		services there, or
+	-	is rostered on to be available to perform veterinary or ancillary services there, or
+	-	is traveling from there to perform veterinary or ancillary services at another place, 
+		or returning there after doing so, or
+	-	is performing veterinary or ancillary services at another place having come from, 
+		or intending to return, there, or
+	-	is at the clinic or connected to it through a computer communications system for 
+		purposes of a professional or business nature.
+
+13.	Number of FVEs at a clinic
+
+A	A 'full time vet' is a vet who is on duty at a clinic for an average weekly 
+	aggregate of 25 hours or more over a given period.
+B	A 'part time vet' is a vet who is on duty at a clinic for an average weekly 
+	aggregate of less than 25 hours over a given period.
+C	The number of FVEs for a clinic for a given period is:
+	-	(number of full time vets x 1.0) + (number of part time vets x 0.33),
+	-	rounded to the nearest whole number.
+
+Part 5:  Full-time Vet Equivalent ('FVE') – other than veterinary clinics
+
+14.	If a person who is not a vet wishes to become a user subscriber:
+	-	They should first contact the licensor with details of their proposed application of 
+		the software and / or community code that makes use of it.
+	-	The licensor will notify them of a substituted basis for 'FVE' calculation for that 
+		application.
+	-	This licence will then apply to them, and their proposed application, on that basis. 
+
+Part 6:  FVE limit and permitted software use
+
+15.	A user subscriber may use the software to support the operations of one or more 
+	clinics during a subscription period, provided that
+
+	15.1.	the user subscriber complies with this licence, and
+
+	15.2.	the aggregate FVEs of the clinic/s at no time exceed the FVE limit that the 
+	user subscriber is licensed for – subject to the exceptions below.
+
+16.	FVE limit for user subscribers with 10 or fewer FVEs
+	If:
+	-	a user subscriber pays fees for a subscription period in good faith based on their 
+		circumstances as at the start of the period, and
+	-	during the period, their FVEs exceed their FVE limit (but never exceed 10 
+		FVEs) 
+	– 	they have not breached clause 15.2.
+
+17.	FVE limit for user subscribers with more than 10 FVEs
+	If:
+	-	a user subscriber has more than 10 FVEs, and
+	-	they exceed their FVE limit during a calendar month, and
+	-	within 14 days after the end of that month they pay the licensor the then current 
+		upgrade fee to increase their FVE limit (to cover the excess) for the balance of 
+		their subscription period - the FVE limit excess is taken to be remedied.
+
+Part 7:  Developer subscribers
+
+18.	You are a 'developer subscriber' if you:
+	-	are preparing to create; or
+	-	are undertaking a project to create; or
+	-	have created – community code, and you are not in breach of the community code rules in Part 8.
+
+19.	There is no subscription fee for being a developer subscriber.
+
+Part 8:  Community code rules
+
+20.	A 'library' is a collection of functions and subroutines that:
+	-	is part of the software, and
+	-	is comprised in discrete files (whether or not compiled), and
+	-	can link to other code, without being modified, so as to support the operations of 
+		that other code.
+	For instance, a .dll file or a .jar file may be a 'library'.
+
+21.	A 'library application' is community code that:
+	-	makes use of one or more unmodified libraries by linking to them, and
+	-	does not otherwise make use of or incorporate the software in any way.
+
+22.	To avoid doubt, community code that makes use of a modified library is not a library 
+	application. A developer subscriber may create community code incorporating or 
+	based on the software or linking to its libraries, but only in accordance with these 
+	community code rules.
+
+23.	A developer subscriber may reverse engineer the software for the purpose of 
+	debugging its community code.
+
+24.	By creating community code, you are taken to agree to these rules, and they apply to 
+	your community code in spite of any inconsistent licence or contract term you purport 
+	to apply to it.
+
+25.	All community code must make it clear (by way of commentary, readme files or some 
+	other recognised means) what changes have been made to the software, by whom 
+	and when.
+
+26.	On the creation of any community code (except a library application), you grant the 
+	licensor a perpetual, worldwide, non-exclusive, no charge, royalty-free irrevocable 
+	licence to copy, reproduce, modify, adapt or add to it, or create derivative works from 
+	or based on it, and to publish, distribute, communicate to the public, perform, 
+	commercialise and sub-license the in source or object form:
+	-	the community code; and 
+	-	all such copies, reproductions, modifications, adaptations, additions and 
+		derivative works. 
+
+27.	Patent licence
+	On the creation of any community code, you grant the licensor a perpetual, 
+	worldwide, non-exclusive, no charge, royalty-free irrevocable licence patent licence 
+	to make, have made, use, offer to sell, sell, import, and otherwise transfer all patents 
+	embodied in it.  If you institute or defend patent litigation against any entity alleging 
+	that the software infringes any patent rights, then you cease to be a developer user 
+	or a subscriber user.
+
+28.	The licensor may transfer or sub-license its rights under clauses 26 and 27.
+
+29.	Obligation to deliver community code to the licensor
+	29.1.	Clause 29.2 does not apply to library applications.
+	29.2.	A developer user must deliver a complete and current copy of any community 
+		code they create, in source and (if the source is then able to be compiled) 
+		object form, to the licensor before or within seven days after:
+		-	giving access to any part of the community code to anyone else (whether 
+			another developer user, a subscriber use or anyone else);
+		-	publishing any part of the community code;
+		-	granting anyone any licence or other legal rights over the community 
+			code;
+		-	deploying or permitting the deployment of any part of the community code 
+			in a production environment;
+		-	the community code is used to support the operations of a veterinary 
+			practice;
+		-	development of the community code is substantially completed;
+		-	the licensor requests it in writing.
+
+	29.3.	If community code is currently under development by a team of five or fewer 
+		persons (e.g. employees of the same corporation or project partners), clause 
+		29.2 is not triggered just because they share access to it within that team.
+
+	29.4.	To avoid any doubt, the licensor's rights under clauses 26 and 27 apply 
+		whether or not the community code has been delivered to it under this clause.
+
+30.	All community code in source or object form:
+	-	must incorporate or be accompanied by a complete copy of this licence;
+	-	may be subject to other licence terms that are consistent with this licence;
+	-	must contain prominent statements that:
+		o	it is community code within the meaning of and subject to this licence;
+		o	the licensor has legal rights in the community code under this licence; and
+		o	the licensor may be contacted at license@openvpms.org;
+		o	it may only be used to support the operations of a veterinary practice by a 
+			current user subscriber;
+		o	fees are payable by user subscribers to the licensor.
+
+31.	If a person publishes or distributes community code that does not comply with clause 
+	30, they indemnify the licensor against subscription fees lost or foregone as a result. 
+
+Part 9:  Distribution of community code
+
+32.	A developer user who otherwise complies with this licence in all respects may publish 
+	and distribute community code they have developed.
+
+Part 10:  User subscriber licence
+
+33.	A user subscriber:
+	-	Has a non-exclusive licence to use the software in accordance with this 
+		document. 
+	-	May not adapt, extend, develop or enhance the software or any part of it (except 
+		as a developer subscriber). 
+	-	Must not alter, modify, tamper with, reverse engineer or attempt to reverse 
+		engineer, decompile or disassemble the software in any way (except as a 
+		developer subscriber).
+	-	Must pay the licensor subscription fees applicable from time to time.
+	-	Must not copy the software (except to make reasonable copies in disk form 
+		bearing the same notices as the original and only for security and backup 
+		purposes).
+	-	Must not remove or tamper with any copyright or other notices on or associated 
+		with the software.
+	-	Must comply with all reasonable directions of the licensor from time to time 
+		relating to use of the software.
+	-	Must establish and carry out reasonable back up procedures for the software and 
+		associated data.
+	-	Agrees that this document does not transfer to the licensee any copyright, patent 
+		or other intellectual property rights in the software.
+
+Part 11:  Liability
+
+34.	The Trade Practices Act 1974 and corresponding legislation in other jurisdictions in 
+	certain circumstances imply mandatory conditions and warranties ('consumer 
+	warranties'). This Part does not exclude or limit the application of any consumer 
+	warranties or other warranties where to do so:
+
+	34.1.	would contravene the law of the relevant jurisdiction; or 
+
+	34.2.	cause any part of this clause to be void. 
+
+35.	The licensor excludes all terms, conditions and warranties implied by custom, the 
+	general law or statute except any consumer warranties. 
+
+36.	The licensor's liability to you for breach of any consumer warranty (other than a 
+	warranty as to title implied by the Trade Practices Act 1974 or equivalent in another 
+	jurisdiction) is limited, at the licensor's option, to:
+	-	replacing the software,
+	-	paying the cost of replacing the software, or
+	-	refunding the current subscription fee.
+
+37.	Subject to clauses 34 and 35, the licensor excludes all liability including but not 
+	limited to liability for any indirect or consequential loss or damage (including but not 
+	limited to lost revenue, lost profits or loss of data) incurred or suffered by you arising 
+	directly or indirectly out of:
+
+	37.1.	the supply, delay in supplying or failure to supply the software,
+
+	37.2.	use of the software,
+
+	37.3.	any errors in the software,
+
+	37.4.	infringement of copyright, patents or any other intellectual property rights by 
+		the software,
+
+	37.5.	this licence, or
+
+	37.6.	termination of this licence.
+
+38.	You indemnify the licensor against all loss, damage, expense and cost that the 
+	licensor may sustain or incur arising directly or indirectly out of:
+
+	38.1.	any wilful, unlawful or negligent act or omission of you, your employees, 
+		agents or sub-contractors in connection with this licence,
+
+	38.2.	any community code that you create, distribute or use,
+
+	38.3.	infringement of copyright, patents or any other intellectual property rights by 
+		community code that you create or distribute,
+
+	38.4.	your use of the software. 
+
+39.	If you are a developer user, you indemnify the licensor against harm suffered or  
+	claims by any person arising from community code that you developed and / or 
+	distrubuted.
+
+40.	If you are a developer user, you indemnify the licensor against any harm, liability, 
+	loss or claims to the extent they arise or are increased by virtue of:
+
+	40.1.	the law of a jurisdiction that the licensor is not subject to, but you are;
+
+	40.2.	any licence, liability, warranty or support terms or promises made by you in 
+		excess of those that apply under this licence;
+
+	40.3.	any misleading or deceptive or other wrongful conduct of you.
+
+Part 12:  General
+
+41.	You acknowledge that you have no right to use the software in any way, except as 
+		permitted by this document.
+
+42.	If part or all of any clause of this document is illegal or unenforceable it will be 
+		severed from and will not affect the continued operation of the remaining provisions. 
+
+43.	This licence:
+
+	43.1.	is governed by the laws of Victoria, Australia, and
+
+	43.2.	does not create a relationship of employment, agency or partnership between 
+		the parties.
+
+44.	The licensor reserves all rights not expressly hereby granted in relation to the 
+	software and any copy, reproduction, modification, adaptation of or addition to it, or 
+	derivative works created from or based on it, and all rights to publish, distribute, 
+	communicate to the public, perform, commercialise and sub-license it in source or 
+	object form.]
+
+45.	Nothing in this document gives you any right to  trade under the name 'OpenVPMS' 
+	or to use 'OpenVPMS' as a trade mark.

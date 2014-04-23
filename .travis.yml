@@ -3,12 +3,12 @@
 language: java
 before_install:
     - cd ..
-    - git clone -branch=master git://github.com/CharltonIT/maven-plugins.git CharltonIT/maven-plugins
-    - git clone -branch=master git://github.com/CharltonIT/openvpms-archetypes.git CharltonIT/openvpms-archetypes
-    - git clone -branch=master git://github.com/CharltonIT/Openvpms-esci-adapter.git CharltonIT/openvpms-esci-adapter
-    - git clone -branch=master git://github.com/CharltonIT/Openvpms-etl.git CharltonIT/Openvpms-etl
-    - git clone -branch=master git://github.com/CharltonIT/Openvpms-framework.git CharltonIT/openvpms-framework
-    - git clone -branch=master git://github.com/CharltonIT/Openvpms-reports.git CharltonIT/openvpms-reports
-    - git clone -branch=master git://github.com/CharltonIT/openvpms-web.git CharltonIT/openvpms-web
-    - git clone -branch=master git://github.com/CharltonIT/openvpms-sms.git CharltonIT/openvpms-sms
-    - git clone -branch=master git://github.com/CharltonIT/openvpms-release.git CharltonIT/openvpms-release
+    - git clone --branch=master git://github.com/CharltonIT/maven-plugins.git CharltonIT/maven-plugins
+    - git clone --branch=master git://github.com/CharltonIT/openvpms-archetypes.git CharltonIT/openvpms-archetypes
+    - git clone --branch=master git://github.com/CharltonIT/Openvpms-esci-adapter.git CharltonIT/openvpms-esci-adapter
+    - git clone --branch=master git://github.com/CharltonIT/Openvpms-etl.git CharltonIT/Openvpms-etl
+    - git clone --branch=master git://github.com/CharltonIT/Openvpms-framework.git CharltonIT/openvpms-framework
+    - git clone --branch=master git://github.com/CharltonIT/Openvpms-reports.git CharltonIT/openvpms-reports
+    - git clone --branch=master git://github.com/CharltonIT/openvpms-web.git CharltonIT/openvpms-web
+    - git clone --branch=master git://github.com/CharltonIT/openvpms-sms.git CharltonIT/openvpms-sms
+    - git clone --branch=master git://github.com/CharltonIT/openvpms-release.git CharltonIT/openvpms-release

@@ -14,4 +14,5 @@ before_install:
     - git clone --branch=master git://github.com/CharltonIT/openvpms-release.git openvpms-release
     - ls -l
     - cd openvpms
+install: true
     

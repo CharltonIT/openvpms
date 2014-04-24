@@ -12,4 +12,6 @@ before_install:
     - git clone --branch=master git://github.com/CharltonIT/openvpms-web.git CharltonIT/openvpms-web
     - git clone --branch=master git://github.com/CharltonIT/openvpms-sms.git CharltonIT/openvpms-sms
     - git clone --branch=master git://github.com/CharltonIT/openvpms-release.git CharltonIT/openvpms-release
+    - ls -l | egrep `^d'
     - cd CharltonIT/openvpms
+    

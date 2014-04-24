@@ -13,6 +13,6 @@ before_install:
     - git clone --branch=$TRAVIS_BRANCH git://github.com/CharltonIT/openvpms-sms.git openvpms-sms
     - git clone --branch=$TRAVIS_BRANCH git://github.com/CharltonIT/openvpms-release.git openvpms-release
     - ls -l
-    - cd openvpms
+    - cd $TRAVIS_BUILD_DIR
 script: true
     

@@ -9,7 +9,7 @@ before_install:
     - git clone --branch=master git://github.com/CharltonIT/Openvpms-etl.git openvpms-etl
     - git clone --branch=master git://github.com/CharltonIT/Openvpms-framework.git openvpms-framework
     - git clone --branch=master git://github.com/CharltonIT/Openvpms-reports.git openvpms-reports
-    - git clone --branch=master git://github.com/CharltonIT/openvpms-web.git penvpms-web
+    - git clone --branch=master git://github.com/CharltonIT/openvpms-web.git openvpms-web
     - git clone --branch=master git://github.com/CharltonIT/openvpms-sms.git openvpms-sms
     - git clone --branch=master git://github.com/CharltonIT/openvpms-release.git openvpms-release
     - ls -l

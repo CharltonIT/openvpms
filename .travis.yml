@@ -3,15 +3,15 @@
 language: java
 before_install:
     - cd ..
-    - git clone --branch=1.7.1-CDIT-beta git://github.com/CharltonIT/maven-plugins.git maven-plugins
-    - git clone --branch=1.7.1-CDIT-beta git://github.com/CharltonIT/openvpms-archetypes.git openvpms-archetypes
-    - git clone --branch=1.7.1-CDIT-beta git://github.com/CharltonIT/Openvpms-esci-adapter.git openvpms-esci-adapter
-    - git clone --branch=1.7.1-CDIT-beta git://github.com/CharltonIT/Openvpms-etl.git openvpms-etl
-    - git clone --branch=1.7.1-CDIT-beta git://github.com/CharltonIT/Openvpms-framework.git openvpms-framework
-    - git clone --branch=1.7.1-CDIT-beta git://github.com/CharltonIT/Openvpms-reports.git openvpms-reports
-    - git clone --branch=1.7.1-CDIT-beta git://github.com/CharltonIT/openvpms-web.git openvpms-web
-    - git clone --branch=1.7.1-CDIT-beta git://github.com/CharltonIT/openvpms-sms.git openvpms-sms
-    - git clone --branch=1.7.1-CDIT-beta git://github.com/CharltonIT/openvpms-release.git openvpms-release
+    - git clone --branch=TRAVIS_BRANCH git://github.com/CharltonIT/maven-plugins.git maven-plugins
+    - git clone --branch=TRAVIS_BRANCH git://github.com/CharltonIT/openvpms-archetypes.git openvpms-archetypes
+    - git clone --branch=TRAVIS_BRANCH git://github.com/CharltonIT/Openvpms-esci-adapter.git openvpms-esci-adapter
+    - git clone --branch=TRAVIS_BRANCH git://github.com/CharltonIT/Openvpms-etl.git openvpms-etl
+    - git clone --branch=TRAVIS_BRANCH git://github.com/CharltonIT/Openvpms-framework.git openvpms-framework
+    - git clone --branch=TRAVIS_BRANCH git://github.com/CharltonIT/Openvpms-reports.git openvpms-reports
+    - git clone --branch=TRAVIS_BRANCH git://github.com/CharltonIT/openvpms-web.git openvpms-web
+    - git clone --branch=TRAVIS_BRANCH git://github.com/CharltonIT/openvpms-sms.git openvpms-sms
+    - git clone --branch=TRAVIS_BRANCH git://github.com/CharltonIT/openvpms-release.git openvpms-release
     - ls -l
     - cd openvpms
     

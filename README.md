@@ -23,6 +23,10 @@ This project is the master project for OPENVPMS - the projects should be placed 
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+Current Build Status:
+[![Build Status](https://travis-ci.org/CharltonIT/openvpms.svg?branch=master)](https://travis-ci.org/CharltonIT/openvpms)
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 OpenVPMS is a not for profit organisation built around the development and supply of open source 
 Veterinary Practice Management Systems. OpenVPMS is owned by its members. A committee populated by members, 
 manages its operation.

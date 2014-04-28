@@ -29,6 +29,3 @@ deploy:
   bucket: openvpms-cdit
   local-dir: /home/travis/openvpms-release/target/
   skip_cleanup: true
-  on:
-    repo: CharltonIT/openvpms
-    branch: heads/1.7.1-CDIT-beta

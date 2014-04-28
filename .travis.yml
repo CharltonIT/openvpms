@@ -17,8 +17,7 @@ before_install:
 - git clone --branch=$TRAVIS_BRANCH git://github.com/CharltonIT/openvpms-release.git
   openvpms-release
 - ls -l
-- cd $TRAVIS_BUILD_DIR
-script: true
+- cd openvpms-release
 deploy:
   provider: s3
   access_key_id: AKIAJE4XD3HI4H4E3S5A

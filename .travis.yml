@@ -19,6 +19,7 @@ before_install:
 - ls -l
 - cd $TRAVIS_BUILD_DIR
 - mvn install -DskipTests=true -B -V
+- cd ..
 - cd openvpms-release
 deploy:
   provider: s3

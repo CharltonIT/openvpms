@@ -1,18 +1,32 @@
-## YAML Template.
----
 language: java
 before_install:
-    - cd ..
-    - git clone --branch=$TRAVIS_BRANCH git://github.com/CharltonIT/maven-plugins.git maven-plugins
-    - git clone --branch=$TRAVIS_BRANCH git://github.com/CharltonIT/openvpms-archetypes.git openvpms-archetypes
-    - git clone --branch=$TRAVIS_BRANCH git://github.com/CharltonIT/Openvpms-esci-adapter.git openvpms-esci-adapter
-    - git clone --branch=$TRAVIS_BRANCH git://github.com/CharltonIT/Openvpms-etl.git openvpms-etl
-    - git clone --branch=$TRAVIS_BRANCH git://github.com/CharltonIT/Openvpms-framework.git openvpms-framework
-    - git clone --branch=$TRAVIS_BRANCH git://github.com/CharltonIT/Openvpms-reports.git openvpms-reports
-    - git clone --branch=$TRAVIS_BRANCH git://github.com/CharltonIT/openvpms-web.git openvpms-web
-    - git clone --branch=$TRAVIS_BRANCH git://github.com/CharltonIT/openvpms-sms.git openvpms-sms
-    - git clone --branch=$TRAVIS_BRANCH git://github.com/CharltonIT/openvpms-release.git openvpms-release
-    - ls -l
-    - cd $TRAVIS_BUILD_DIR
+- cd ..
+- git clone --branch=$TRAVIS_BRANCH git://github.com/CharltonIT/maven-plugins.git
+  maven-plugins
+- git clone --branch=$TRAVIS_BRANCH git://github.com/CharltonIT/openvpms-archetypes.git
+  openvpms-archetypes
+- git clone --branch=$TRAVIS_BRANCH git://github.com/CharltonIT/Openvpms-esci-adapter.git
+  openvpms-esci-adapter
+- git clone --branch=$TRAVIS_BRANCH git://github.com/CharltonIT/Openvpms-etl.git openvpms-etl
+- git clone --branch=$TRAVIS_BRANCH git://github.com/CharltonIT/Openvpms-framework.git
+  openvpms-framework
+- git clone --branch=$TRAVIS_BRANCH git://github.com/CharltonIT/Openvpms-reports.git
+  openvpms-reports
+- git clone --branch=$TRAVIS_BRANCH git://github.com/CharltonIT/openvpms-web.git openvpms-web
+- git clone --branch=$TRAVIS_BRANCH git://github.com/CharltonIT/openvpms-sms.git openvpms-sms
+- git clone --branch=$TRAVIS_BRANCH git://github.com/CharltonIT/openvpms-release.git
+  openvpms-release
+- ls -l
+- cd $TRAVIS_BUILD_DIR
 script: true
-    
+deploy:
+  provider: s3
+  access_key_id: AKIAJE4XD3HI4H4E3S5A
+  secret_access_key:
+    secure: VVU5pawelOMHjbCexP5w8FKcq32Spw21DWb8dDxbJq+jdjuqzFWW++zDwJlHPw3N6ttm0lp4pIF6qRadTlKrfedvJiJniCrPu2uaT/+YOAHnHbvDmhi2c/PXqFxWLy2aFzSXzRmMQmNdw/VSTyS7U91q28NsFZrEU6odY4CmcYU=
+  bucket: openvpms-cdit
+  local-dir: /home/travis/openvpms-release/target/
+  skip_cleanup: true
+  on:
+    repo: CharltonIT/openvpms
+    branch: heads/1.7.1-CDIT-beta

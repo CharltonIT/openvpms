@@ -19,6 +19,7 @@ before_install:
 - ls -l
 - cd $TRAVIS_BUILD_DIR
 - mvn install -DskipTests=true -B -V
+- cd ..
 - cd openvpms-release
 deploy:
   provider: s3
@@ -28,5 +29,3 @@ deploy:
   bucket: openvpms-cdit
   local-dir: /home/travis/openvpms-release/target/
   skip_cleanup: true
-  on:
-    branch: heads/1.7.1-CDIT-beta

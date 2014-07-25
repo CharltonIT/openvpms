@@ -449,7 +449,7 @@
                 <jdbc.version>5.1.5</jdbc.version>
                 <build.jdbc.driverClassName>com.mysql.jdbc.Driver</build.jdbc.driverClassName>
                 <build.hibernate.dialect>org.hibernate.dialect.MySQL5InnoDBDialect</build.hibernate.dialect>
-                <build.jdbc.db>openvpms-1.8</build.jdbc.db>
+                <build.jdbc.db>openvpms-1_8</build.jdbc.db>
                 <build.jdbc.server>jdbc:mysql://localhost:3306/</build.jdbc.server>
                 <build.jdbc.url>${build.jdbc.server}${build.jdbc.db}</build.jdbc.url>
                 <build.jdbc.username>openvpms</build.jdbc.username>

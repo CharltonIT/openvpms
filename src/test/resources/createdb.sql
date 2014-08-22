@@ -3,12 +3,11 @@
 # with all privileges
 #
 
-CREATE DATABASE `openvpms` /*!40100 DEFAULT CHARACTER SET utf8 */;
+CREATE DATABASE IF NOT EXISTS `openvpms-1_8` /*!40100 DEFAULT CHARACTER SET utf8 */;
 
-GRANT ALL PRIVILEGES ON openvpms.* TO 'openvpms'@'localhost'
-    IDENTIFIED BY 'openvpms' WITH GRANT OPTION;
+USE `openvpms-1_8`;
 
-GRANT ALL PRIVILEGES ON openvpms.* TO 'openvpms'@'%'
+GRANT ALL PRIVILEGES ON `openvpms-1_8`.* TO 'openvpms'@'localhost'
     IDENTIFIED BY 'openvpms' WITH GRANT OPTION;
 
 COMMIT;

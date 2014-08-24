@@ -79,6 +79,15 @@
             <timezone>+10</timezone>
         </developer>
         <developer>
+            <id>bcharlton</id>
+            <name>Ben Charlton </name>
+            <email></email>
+            <roles>
+                <role>Developer</role>
+            </roles>
+            <timezone>+10</timezone>
+        </developer>
+        <developer>
             <id>tde</id>
             <name>Tony De Keizer</name>
             <email>tony@verticalconnect.net</email>
@@ -458,21 +467,54 @@
                 <build.jdbc.driverClassName>com.mysql.jdbc.Driver</build.jdbc.driverClassName>
                 <build.hibernate.dialect>org.hibernate.dialect.MySQL5InnoDBDialect</build.hibernate.dialect>
                 <build.jdbc.db>openvpms-1_8</build.jdbc.db>
-                <build.jdbc.server>jdbc:mysql://localhost:3306/</build.jdbc.server>
+                <build.jbdc.host>localhost</build.jbdc.host>
+                <build.jdbc.server>jdbc:mysql://${build.jbdc.host}:3306/</build.jdbc.server>
                 <build.jdbc.url>${build.jdbc.server}${build.jdbc.db}</build.jdbc.url>
                 <build.jdbc.username>openvpms</build.jdbc.username>
                 <build.jdbc.password>openvpms</build.jdbc.password>
+                <jdbc.max_connections>20</jdbc.max_connections>
                 <release.hibernate.dialect>${build.hibernate.dialect}</release.hibernate.dialect>
                 <release.jdbc.driverClassName>${build.jdbc.driverClassName}</release.jdbc.driverClassName>
                 <release.jdbc.url>${build.jdbc.url}</release.jdbc.url>
                 <release.jdbc.username>${build.jdbc.username}</release.jdbc.username>
                 <release.jdbc.password>${build.jdbc.password}</release.jdbc.password>
+                <jdbc.admin.username>root</jdbc.admin.username>
+                <jdbc.admin.password>Password</jdbc.admin.password>
+                <release.mysqldump.path>C:\Program Files\MySQL\MySQL Server 5.6\bin\mysqldump.exe</release.mysqldump.path>
             </properties>
         </profile>
         <profile>
             <id>release</id>
+            <activation>
+                <property>
+                    <name>processRelease</name>
+                </property>
+                    <!--activate to process the release module -->
+            </activation>
             <properties>
                 <release.jdbc.url>jdbc:mysql://localhost:3306/openvpms</release.jdbc.url>
+            </properties>
+            <modules>
+                <module>../openvpms-release</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>env-jenkins</id>
+            <activation>
+                <property>
+                    <name>JENKINS_HOME</name>
+                </property>
+            </activation>
+            <properties>
+                <build.jdbc.db>cb_openvpms-1_8</build.jdbc.db>
+                <build.jbdc.host>us-cdbr-cb-east-01.cleardb.net</build.jbdc.host>
+                <build.jdbc.url>${build.jdbc.server}${build.jdbc.db}</build.jdbc.url>
+                <build.jdbc.username>b94aac1e2d1c30</build.jdbc.username>
+                <build.jdbc.password>5318afb1</build.jdbc.password>
+                <jdbc.admin.username>${build.jdbc.username}</jdbc.admin.username>
+                <jdbc.admin.password>${build.jdbc.password}</jdbc.admin.password>
+                <release.mysqldump.path>mysqldump</release.mysqldump.path>
+                <jdbc.max_connections>10</jdbc.max_connections>
             </properties>
         </profile>
     </profiles>
@@ -486,7 +528,6 @@
         <module>../openvpms-esci-adapter</module>
         <module>../openvpms-web</module>
         <module>../openvpms-etl</module>
-        <module>../openvpms-release</module>
     </modules>
 
     <repositories>

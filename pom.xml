@@ -507,10 +507,10 @@
             </activation>
             <properties>
                 <build.jdbc.db>openvpms-1_8</build.jdbc.db>
-                <build.jbdc.host>172.31.20.142</build.jbdc.host>
+                <build.jbdc.host>cdit-mysqldb.cvo7rwfj7mzd.ap-southeast-2.rds.amazonaws.com</build.jbdc.host>
                 <build.jdbc.url>${build.jdbc.server}${build.jdbc.db}</build.jdbc.url>
-                <build.jdbc.username>cdituser</build.jdbc.username>
-                <build.jdbc.password>bbc75aws</build.jdbc.password>
+                <build.jdbc.username>developer</build.jdbc.username>
+                <build.jdbc.password>Password</build.jdbc.password>
                 <jdbc.admin.username>${build.jdbc.username}</jdbc.admin.username>
                 <jdbc.admin.password>${build.jdbc.password}</jdbc.admin.password>
                 <release.mysqldump.path>mysqldump</release.mysqldump.path>

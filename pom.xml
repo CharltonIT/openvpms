@@ -506,11 +506,11 @@
                 </property>
             </activation>
             <properties>
-                <build.jdbc.db>cb_openvpms-1_8</build.jdbc.db>
-                <build.jbdc.host>us-cdbr-cb-east-01.cleardb.net</build.jbdc.host>
+                <build.jdbc.db>openvpms-1_8</build.jdbc.db>
+                <build.jbdc.host>172.31.20.142</build.jbdc.host>
                 <build.jdbc.url>${build.jdbc.server}${build.jdbc.db}</build.jdbc.url>
-                <build.jdbc.username>b94aac1e2d1c30</build.jdbc.username>
-                <build.jdbc.password>5318afb1</build.jdbc.password>
+                <build.jdbc.username>cdituser</build.jdbc.username>
+                <build.jdbc.password>bbc75aws</build.jdbc.password>
                 <jdbc.admin.username>${build.jdbc.username}</jdbc.admin.username>
                 <jdbc.admin.password>${build.jdbc.password}</jdbc.admin.password>
                 <release.mysqldump.path>mysqldump</release.mysqldump.path>

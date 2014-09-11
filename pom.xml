@@ -507,7 +507,7 @@
             </activation>
             <properties>
                 <build.jdbc.db>openvpms-1_8</build.jdbc.db>
-                <build.jbdc.host>cdit-mysqldb.cvo7rwfj7mzd.ap-southeast-2.rds.amazonaws.com</build.jbdc.host>
+                <build.jbdc.host>localhost</build.jbdc.host>
                 <build.jdbc.url>${build.jdbc.server}${build.jdbc.db}</build.jdbc.url>
                 <build.jdbc.username>developer</build.jdbc.username>
                 <build.jdbc.password>Password</build.jdbc.password>

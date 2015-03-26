@@ -24,7 +24,7 @@
     <artifactId>openvpms</artifactId>
     <packaging>pom</packaging>
     <name>OpenVPMS</name>
-    <version>1.8-SNAPSHOT</version>
+    <version>1.8-beta-1</version>
     <inceptionYear>2005</inceptionYear>
     <url>http://www.openvpms.org</url>
 
